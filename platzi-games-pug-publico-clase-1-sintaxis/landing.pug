@@ -1,5 +1,8 @@
 -var titulo = "Titulo Principal"
 -var titulos =["Subtitulo 1", "Subtitulo 2", "Subtitulo 3"]
+-var user ="David"
+
+//-haciendo comentarios en pug :D
 doctype html
 html
 	head
@@ -8,7 +11,10 @@ html
 	body
 		header
 			h1 PlatziGames CHANGE
-			a.boton Registro
+			if user
+				a hola #{user}
+			else
+				a.boton Registro
 		section.intro
 			.intro__imagen: img(src="images/imagen.png")
 			.intro__contenido
@@ -19,3 +25,6 @@ html
 					|	Nemo quae nisi placeat tempore saepe architecto temporibus officia. 
 					|	Nulla, quia sunt?
 				a.boton leer mas
+			ul 
+				each titulo in titulos
+					li=titulo
