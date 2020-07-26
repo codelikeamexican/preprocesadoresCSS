@@ -1,0 +1,21 @@
+-var titulo = "Titulo Principal"
+-var titulos =["Subtitulo 1", "Subtitulo 2", "Subtitulo 3"]
+-var user ="David"
+mixin caja(imagen,titulo,contenido)
+	.caja
+		.caja__imagen: img(src="images/"+imagen)
+		.caja__contenido
+			h3=titulo
+			p=contenido
+//-haciendo comentarios en pug :D
+doctype html
+html
+	include head.pug
+	body
+		header
+			h1 PlatziGames CHANGE
+			if user
+				a hola #{user}
+			else
+				a.boton Registro
+        block contenidos
