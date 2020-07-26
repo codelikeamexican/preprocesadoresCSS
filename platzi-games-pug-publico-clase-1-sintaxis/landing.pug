@@ -1,7 +1,12 @@
 -var titulo = "Titulo Principal"
 -var titulos =["Subtitulo 1", "Subtitulo 2", "Subtitulo 3"]
 -var user ="David"
-
+mixin caja(imagen,titulo,contenido)
+	.caja
+		.caja__imagen: img(src="images/"+imagen)
+		.caja__contenido
+			h3=titulo
+			p=contenido
 //-haciendo comentarios en pug :D
 doctype html
 html
@@ -26,5 +31,7 @@ html
 					|	Nulla, quia sunt?
 				a.boton leer mas
 		main.contenido
-			.caja
-		
+			+caja('imagen.png','Titulo Caja 1', 'Informacion 1')
+			+caja('imagen.png','Titulo Caja 1', 'Informacion 1')
+			+caja('imagen.png','Titulo Caja 1', 'Informacion 1')
+	
