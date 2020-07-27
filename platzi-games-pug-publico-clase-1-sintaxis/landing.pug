@@ -1,7 +1,11 @@
 extend plantilla.pug
 block contenidos
 		section.intro
-			.intro__imagen: img(src="images/imagen.png")
+			.intro__menu
+				h2 MENU
+				ul
+					each menuitem in menu
+						li=menuitem
 			.intro__contenido
 				h2= titulo
 				p
