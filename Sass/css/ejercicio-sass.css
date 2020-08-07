@@ -5,7 +5,7 @@
 
 body {
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 main {
@@ -17,6 +17,8 @@ main {
 }
 
 .perfil {
+  background-color: #8841DA;
+  color: white;
   width: 50%;
   padding-top: 50px;
 }
@@ -31,6 +33,7 @@ main {
   text-transform: uppercase;
   text-align: center;
   font-size: 20px;
+  font-family: "Oswald", "sans-serif";
 }
 
 .perfil__titulo {
@@ -51,5 +54,37 @@ main {
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
+  font-family: "Oswald", "sans-serif";
+  color: white;
+}
+
+.estadistica--perfil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  height: 90px;
+  padding-top: 15px;
+  margin: 0 auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.estadistica--perfil h3 {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0;
+  font-family: "Oswald", "sans-serif";
+  color: #333333;
+}
+
+.estadistica--perfil span {
+  font-size: 12px;
+  color: gray;
+  font-family: "Oswald", "sans-serif";
 }
 /*# sourceMappingURL=ejercicio-sass.css.map */
