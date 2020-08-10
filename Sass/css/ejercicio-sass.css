@@ -151,6 +151,15 @@ main {
   margin: 0;
 }
 
+.ubicacion--perfil h2 {
+  font-weight: bolder;
+}
+
+.ubicacion--perfil h3 {
+  font-weight: lighter;
+  font-size: 14px;
+}
+
 .ubicacion--perfil .ubicacion--perfil_info {
   -ms-grid-column: 2;
       grid-column-start: 2;
