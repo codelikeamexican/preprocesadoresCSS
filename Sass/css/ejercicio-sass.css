@@ -123,10 +123,46 @@ main {
   background-color: white;
   -webkit-box-shadow: 0px 20px 33px 0px rgba(0, 0, 0, 0.5);
           box-shadow: 0px 20px 33px 0px rgba(0, 0, 0, 0.5);
+  width: 50%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2;
+      grid-template-columns: 2;
+  -ms-grid-rows: 1;
+      grid-template-rows: 1;
 }
 
 .ubicacion--perfil i {
-  width: 50px;
-  height: 50px;
+  font-size: 50px;
+  margin: 15px;
+  -ms-grid-column: 0;
+      grid-column-start: 0;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.ubicacion--perfil h2, .ubicacion--perfil h3 {
+  margin: 0;
+}
+
+.ubicacion--perfil .ubicacion--perfil_info {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  margin: 0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.galeria {
+  width: 50%;
 }
 /*# sourceMappingURL=ejercicio-sass.css.map */
