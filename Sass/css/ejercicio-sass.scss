@@ -17,11 +17,20 @@ $color-variacion:#3f579a;
 	}
 }
 
+@mixin titulos($fuente){
+	@if $fuente ==$Fuente1{
+		font-family: 'Lato';
+	}@else{
+		font-family: $Fuente2;
+	}
+}
+
 * {
 	box-sizing: border-box;
 }
 
 body {
+	@include titulos;
 	margin: 0;
 	font-family: $Fuente1;
 }
@@ -79,6 +88,7 @@ main {
 	justify-content: space-around;
 	text-align: center;
 	@include caja;
+	@include titulos;
 	h3{
 		font-size: 20px;
 		font-weight: 600;
