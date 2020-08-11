@@ -28,7 +28,7 @@ main {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: auto;
 }
 
 .perfil {
@@ -192,7 +192,7 @@ main {
 .galeria {
   width: 50%;
   height: 250px;
-  margin: 0 auto;
+  margin: 40px auto;
   padding: 20px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -214,6 +214,7 @@ main {
 }
 
 .galeria__foto-principal img {
+  margin-top: 5px;
   width: 120px;
   height: 120px;
 }
@@ -225,7 +226,8 @@ main {
 }
 
 .galeria__fotos-adicionales img {
-  margin: 5px;
+  margin-top: 5px;
+  margin-right: 5px;
   width: auto;
   height: 60px;
 }
@@ -238,5 +240,40 @@ main {
   font-weight: 600;
   font-family: "Oswald", "sans-serif";
   margin: 0;
+}
+
+.articulos {
+  background-color: #333333;
+  width: 50%;
+  padding-top: 60px;
+  padding-left: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-items: right;
+}
+
+.articulo {
+  border-bottom: 2px solid #8841DA;
+  margin-right: 0;
+  padding-right: 60px;
+}
+
+.articulo__categoria {
+  color: #8841DA;
+}
+
+.articulo__titulo {
+  font-family: "Oswald", "sans-serif";
+  color: white;
+  font-weight: 600;
+}
+
+.articulo__descripcion {
+  color: white;
 }
 /*# sourceMappingURL=ejercicio-sass.css.map */
